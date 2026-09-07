@@ -1,0 +1,21 @@
+# Raw data — large files shouldn't live in git
+/data/*.csv
+/data/*.xlsx
+/data/*.xls
+/data/*.zip
+/data/raw/
+
+# Keep folder structure visible even though data files are ignored
+!/data/.gitkeep
+
+# OS/editor cruft
+.DS_Store
+.vscode/
+*.swp
+
+# Postgres/DB dumps if you ever export locally
+*.sql.bak
+*.dump
+
+# Power BI — leave this commented until you decide
+# *.pbix
